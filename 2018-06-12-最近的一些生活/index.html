@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="心态崩了编码问题锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷 锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟筋开始锟斤拷学校锟斤拷一锟斤拷锟斤拷知锟斤拷锟斤拷锟节硷拷锟斤拷锟侥讹拷知锟斤拷锟斤拷锟斤拷然锟斤拷锟斤拷锟叫很多不知锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟角筹拷锟斤拷锟斤拷喜锟斤拷每一锟斤拷选锟斤拷锟斤拷值锟矫憋拷锟斤拷锟截ｏ拷锟斤拷锟斤拷锟斤拷为一锟斤拷锟姐不锟斤拷锟斤拷锟斤拷影锟届到锟皆硷拷锟斤拷锟斤拷锟介，锟斤拷">
+<meta name="keywords" content="编码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="6-12 这是一篇被编码问题毁了的文章">
+<meta property="og:url" content="http://yoursite.com/2018-06-12-最近的一些生活/index.html">
+<meta property="og:site_name" content="Haibo的个人小站">
+<meta property="og:description" content="心态崩了编码问题锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷 锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟筋开始锟斤拷学校锟斤拷一锟斤拷锟斤拷知锟斤拷锟斤拷锟节硷拷锟斤拷锟侥讹拷知锟斤拷锟斤拷锟斤拷然锟斤拷锟斤拷锟叫很多不知锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟角筹拷锟斤拷锟斤拷喜锟斤拷每一锟斤拷选锟斤拷锟斤拷值锟矫憋拷锟斤拷锟截ｏ拷锟斤拷锟斤拷锟斤拷为一锟斤拷锟姐不锟斤拷锟斤拷锟斤拷影锟届到锟皆硷拷锟斤拷锟斤拷锟介，锟斤拷">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-24T08:47:10.890Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="6-12 这是一篇被编码问题毁了的文章">
+<meta name="twitter:description" content="心态崩了编码问题锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷 锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟筋开始锟斤拷学校锟斤拷一锟斤拷锟斤拷知锟斤拷锟斤拷锟节硷拷锟斤拷锟侥讹拷知锟斤拷锟斤拷锟斤拷然锟斤拷锟斤拷锟叫很多不知锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟角筹拷锟斤拷锟斤拷喜锟斤拷每一锟斤拷选锟斤拷锟斤拷值锟矫憋拷锟斤拷锟截ｏ拷锟斤拷锟斤拷锟斤拷为一锟斤拷锟姐不锟斤拷锟斤拷锟斤拷影锟届到锟皆硷拷锟斤拷锟斤拷锟介，锟斤拷">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/2018-06-12-最近的一些生活/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>6-12 这是一篇被编码问题毁了的文章 | Haibo的个人小站</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Haibo的个人小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Stay Hungry,Stay Foolish!</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018-06-12-最近的一些生活/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Li Haibo">
+      <meta itemprop="description" content="生活不只是coding">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Haibo的个人小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">6-12 这是一篇被编码问题毁了的文章
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-12 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-12T00:00:00+08:00">2018-06-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-24 16:47:10" itemprop="dateModified" datetime="2019-03-24T16:47:10+08:00">2019-03-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="心态崩了"><a href="#心态崩了" class="headerlink" title="心态崩了"></a>心态崩了</h1><h1 id="编码问题"><a href="#编码问题" class="headerlink" title="编码问题"></a>编码问题</h1><h1 id="锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷"><a href="#锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷" class="headerlink" title="锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷"></a>锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷</h1><blockquote>
+<p>锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟筋开始锟斤拷学校锟斤拷一锟斤拷锟斤拷知锟斤拷锟斤拷锟节硷拷锟斤拷锟侥讹拷知锟斤拷锟斤拷锟斤拷然锟斤拷锟斤拷锟叫很多不知锟斤拷锟斤拷<br>锟斤拷锟斤拷锟斤拷锟角筹拷锟斤拷锟斤拷喜锟斤拷每一锟斤拷选锟斤拷锟斤拷值锟矫憋拷锟斤拷锟截ｏ拷锟斤拷锟斤拷锟斤拷为一锟斤拷锟姐不锟斤拷锟斤拷锟斤拷影锟届到锟皆硷拷锟斤拷锟斤拷锟介，锟斤拷锟斤拷锟皆硷拷锟侥达拷锟斤拷<br>一锟斤拷锟斤拷锟斤拷识锟杰讹拷锟剿ｏ拷锟斤拷锟斤拷锟窖ｏ拷锟斤拷锟斤拷锟窖ｏ拷锟斤拷志同锟斤拷锟较碉拷同锟介，锟叫达拷锟叫ｏ拷锟饺等吧ｏ拷<br>锟斤拷锟斤拷锟剿讹拷锟斤拷锟叫ｏ拷也锟斤拷锟结不喜锟斤拷某些锟剿ｏ拷锟斤拷学锟斤拷锟斤拷锟轿猴拷一锟斤拷锟斤拷锟洁处锟斤拷一锟斤拷锟斤拷锟睫课筹拷</p>
+</blockquote>
+<p><strong>锟斤拷锟斤拷锟斤拷锟杰斤拷一锟斤拷去锟疥定锟铰碉拷目锟疥都锟斤拷锟斤拷锟斤拷锟轿ｏ拷</strong></p>
+<ol>
+<li>锟斤拷锟斤拷</li>
+</ol>
+<blockquote>
+<p>锟斤拷锟斤拷目锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷稀锟角得碉拷锟斤拷锟斤拷锟斤拷锟斤拷时锟皆硷拷锟侥硷拷锟斤拷锟斤拷没锟叫猴拷锟轿猴拷锟斤拷说锟斤拷锟斤拷锟斤拷锟斤拷锟剿撅拷锟侥★拷<br>锟斤拷一锟接斤拷一锟斤拷锟斤拷锟斤拷208锟斤到锟斤拷锟节碉拷一锟斤拷锟斤拷十锟脚斤，锟斤拷一锟斤拷锟斤拷锟窖帮拷锟侥癸拷锟教ｏ拷锟斤拷锟斤拷锟斤拷锟揭ｏ拷锟揭帮拷锟斤拷锟斤拷锟斤拷<br>锟窖撅拷锟斤拷锟剿碉拷锟斤拷锟斤拷锟斤拷为啥锟铰讹拷锟剿硷拷锟绞的撅拷锟侥ｏ拷锟斤拷锟斤拷锟斤拷锟斤拷为锟斤拷锟铰凤拷太锟斤拷锟斤拷锟剿ｏ拷也锟斤拷锟斤拷锟斤拷为锟斤拷锟皆硷拷锟斤拷片锟斤拷锟剿刺硷拷锟斤拷<br>也锟斤拷锟斤拷锟斤拷慕锟斤拷锟剿碉拷锟斤拷锟侥ｏ拷也锟斤拷锟斤拷锟斤拷锟斤拷锟皆硷拷锟斤拷锟斤拷锟斤拷锟姐，也锟斤拷锟斤拷为锟斤拷锟皆硷拷锟斤拷锟矫革拷帅锟斤拷锟斤拷之锟斤拷锟斤拷前貌锟斤拷偶锟斤拷<br>锟斤拷锟斤拷某锟斤拷目锟侥ｏ拷锟斤拷锟斤拷锟揭匡拷锟斤拷锟斤拷锟侥帮拷锟斤拷锟斤拷锟杰诧拷锟斤拷锟斤拷锟斤拷锟介不锟矫猴拷锟斤拷锟接诧拷锟斤拷锟斤拷锟斤拷时锟斤拷锟斤拷去锟杰硷拷圈锟斤拷锟斤拷锟斤拷锟剿憋拷锟斤拷锟斤拷锟斤拷爽锟斤拷</p>
+</blockquote>
+<blockquote>
+<p>锟斤拷锟斤拷锟解将锟斤拷一锟斤拷锟斤拷锟侥硷拷锟斤拷锟斤拷锟接ｏ拷说锟斤拷锟斤拷也挺锟斤拷锟缴ｏ拷说锟斤拷锟斤拷也挺锟斤拷锟杰ｏ拷锟斤拷锟缴碉拷锟斤拷没锟斤拷锟斤拷锟斤拷锟斤拷太锟届，一直锟杰斤拷锟斤拷锟侥硷拷锟斤拷<br>一直锟斤拷锟斤拷锟斤拷锟皆很伙拷锟斤拷锟斤拷锟斤拷锟狡硷拷锟斤拷说锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟杰帮拷锟斤拷锟斤拷锟脚憋拷锟剿吃ｏ拷锟斤拷锟皆硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟阶匡拷锟斤拷锟斤拷锟诫都锟斤拷锟杰★拷<br>锟斤拷锟斤拷目锟疥还锟斤拷锟斤拷十锟斤不锟斤拷锟斤拷希锟斤拷锟皆硷拷锟斤拷锟斤拷住锟斤拷为锟斤拷锟皆硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟缴★拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷</p>
+</blockquote>
+<ol start="2">
+<li>转专业</li>
+</ol>
+<blockquote>
+<p>锟斤拷锟斤拷目锟疥，貌锟斤拷锟斤拷锟斤拷知锟斤拷锟揭斤拷锟斤拷锟斤拷源锟斤拷时锟斤拷锟斤拷锟斤拷锟斤拷锟剿的ｏ拷没锟斤拷锟轿猴拷锟斤拷豫锟斤拷锟斤拷锟斤拷转专业锟斤拷</p>
+</blockquote>
+<blockquote>
+<p>锟斤拷锟斤拷源锟角革拷锟斤拷锟斤拷锟斤拷一锟斤拷时锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷摇锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷源貌锟斤拷也锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷细锟斤拷锟诫，锟斤拷貌锟斤拷锟斤拷锟侥诧拷太喜锟斤拷锟斤拷源锟斤拷锟斤拷专业锟斤拷<br>锟斤拷锟斤拷喜锟斤拷锟侥伙拷锟角硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟脚达拷锟斤拷锟斤拷锟皆硷拷锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟缴筹拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟侥成就革拷锟斤拷锟斤拷源锟斤拷锟斤拷锟斤拷锟揭的ｏ拷<br>系统锟斤拷学习锟斤拷锟斤拷锟斤拷锟教诧拷锟斤拷锟斤拷锟斤拷希锟斤拷锟侥吧★拷锟斤拷为锟斤拷锟斤拷时锟斤拷锟侥讹拷摇锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷没锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟阶猴拷锟斤拷锟角筹拷锟斤拷锟斤拷锟斤拷锟剿ｏ拷<br>锟斤拷然也锟缴癸拷转锟斤拷专业锟斤拷锟斤拷锟斤拷锟斤拷锟铰班级锟斤拷</p>
+</blockquote>
+<blockquote>
+<p>锟斤拷锟斤拷乍锟斤拷锟斤拷一锟斤拷锟剿讹拷锟斤拷锟斤拷识锟斤拷硕锟斤拷锟侥斤拷锟斤拷貌锟斤拷只锟斤拷锟斤拷锟斤拷锟斤拷锟轿诧拷锟斤拷锟斤拷锟皆硷拷锟叫撅拷锟斤拷锟铰讹拷锟剿吧ｏ拷锟角讹拷时锟斤拷貌锟斤拷锟斤拷锟皆硷拷<br>锟斤拷锟斤拷学习锟斤拷锟斤拷锟斤拷锟揭碉拷一锟斤拷时锟戒，也锟斤拷锟斤拷锟角讹拷时锟戒发锟街筹拷锟斤拷锟斤拷学习锟斤拷效锟绞高碉拷没锟斤拷锟窖ｏ拷锟铰凤拷锟叫撅拷锟皆硷拷锟斤拷锟斤拷锟斤拷锟斤拷一锟街撅拷锟界。</p>
+</blockquote>
+<blockquote>
+<p>锟斤拷然锟斤拷锟揭碉拷锟斤拷应锟斤拷也锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷说锟侥ｏ拷锟斤拷一锟斤拷锟铰地凤拷锟斤拷锟斤拷锟杰很匡拷锟斤拷锟斤拷锟斤拷锟斤拷锟剿达拷锟斤拷一片锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷识锟斤拷<br>一些锟斤拷锟斤拷锟斤拷锟斤拷锟窖ｏ拷希锟斤拷锟斤拷锟斤拷锟斤拷一锟斤拷锟斤拷同努锟斤拷锟缴ｏ拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷慕锟斤拷锟剿★拷</p>
+</blockquote>
+<ol start="3">
+<li>锟斤拷学python锟斤拷锟斤拷</li>
+</ol>
+<blockquote>
+<p>锟斤拷锟斤拷目锟斤拷说实锟斤拷锟斤拷也锟斤拷实锟斤拷锟剿ｏ拷说没实锟斤拷也锟斤拷没实锟街ｏ拷锟斤拷之学锟矫伙拷锟斤拷锟斤拷锟斤拷锟斤拷锟节筹拷锟斤拷锟斤拷锟斤拷没锟叫架癸拷锟侥革拷锟筋，<br>锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟诫到锟斤拷锟斤拷锟斤拷锟侥ｏ拷没锟斤拷锟饺计伙拷锟斤拷锟斤拷实锟叫ｏ拷锟斤拷锟斤拷锟皆硷拷锟侥筹拷锟斤拷锟斤拷锟斤拷锟斤拷锟竭帮拷锟解，没锟斤拷一锟斤拷锟斤拷锟斤拷锟截匡拷锟斤拷思路锟斤拷<br>锟斤拷取一些锟津单碉拷锟斤拷源锟斤拷锟斤拷锟皆ｏ拷锟斤拷模锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷没锟斤拷锟斤拷思路锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷之锟斤拷愿锟皆硷拷锟斤拷锟斤拷锟斤拷锟侥碉拷锟斤拷锟斤拷毛锟斤拷锟斤拷</p>
+</blockquote>
+<hr>
+<p><strong>锟斤拷学锟斤拷锟皆达拷锟缴憋拷锟斤拷锟酵的地凤拷锟斤拷希锟斤拷锟皆硷拷锟杰多犯些锟斤拷锟斤拷锟斤拷然锟斤拷锟斤拷时锟侥癸拷锟斤拷锟斤拷</strong><br><em>锟斤拷锟斤拷锟斤拷锟斤拷锟皆硷拷锟斤拷锟斤拷学习锟斤拷锟劫达拷锟斤拷戏锟斤拷没锟铰干多看锟斤拷锟斤拷锟斤拷锟角好的★拷</em></p>
+<hr>
+<p>气死，因为编码问题导致辛辛苦苦码的字都没了！！！！！<br>以后一定要注意<br>这篇就这样提醒自己吧！！！</p>
+<h1 id="啊啊啊啊啊啊"><a href="#啊啊啊啊啊啊" class="headerlink" title="啊啊啊啊啊啊"></a>啊啊啊啊啊啊</h1>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/编码/" rel="tag"># 编码</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018-06-3-python学习笔记（1）/" rel="next" title="5-7 python学习笔记（1）">
+                <i class="fa fa-chevron-left"></i> 5-7 python学习笔记（1）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018-06-14-关于最近/" rel="prev" title="6-14 我又回来了">
+                6-14 我又回来了 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Li Haibo</p>
+              <div class="site-description motion-element" itemprop="description">生活不只是coding</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#心态崩了"><span class="nav-number">1.</span> <span class="nav-text">心态崩了</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编码问题"><span class="nav-number">2.</span> <span class="nav-text">编码问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷"><span class="nav-number">3.</span> <span class="nav-text">锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#啊啊啊啊啊啊"><span class="nav-number">4.</span> <span class="nav-text">啊啊啊啊啊啊</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Li Haibo</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.1"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

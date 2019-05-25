@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="从数学的角度告诉你：人的颜值有多重要  始于颜值 陷于颜值 忠于颜值   选择伴侣是一生中最重要的决定之一,未来的幸福极大程度上取决于你选择和谁安定下来。我们肯定都很看重一些品质：愿意妥协，具备养家的能力，温暖、宽容并支持你。可你是否想过，如果这些品质真的如此重要，我们又为何还执迷于对方的外表呢？  关于美的定义千差万别，普遍规律是否存在？ 有什么办法可以让自己显得更有魅力，帮助我们顺利脱单呢？">
+<meta name="keywords" content="数学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="5-13 颜值与数学的关系">
+<meta property="og:url" content="http://yoursite.com/2018-05-13-人的颜值与数学/index.html">
+<meta property="og:site_name" content="Haibo的个人小站">
+<meta property="og:description" content="从数学的角度告诉你：人的颜值有多重要  始于颜值 陷于颜值 忠于颜值   选择伴侣是一生中最重要的决定之一,未来的幸福极大程度上取决于你选择和谁安定下来。我们肯定都很看重一些品质：愿意妥协，具备养家的能力，温暖、宽容并支持你。可你是否想过，如果这些品质真的如此重要，我们又为何还执迷于对方的外表呢？  关于美的定义千差万别，普遍规律是否存在？ 有什么办法可以让自己显得更有魅力，帮助我们顺利脱单呢？">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-24T08:47:10.888Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="5-13 颜值与数学的关系">
+<meta name="twitter:description" content="从数学的角度告诉你：人的颜值有多重要  始于颜值 陷于颜值 忠于颜值   选择伴侣是一生中最重要的决定之一,未来的幸福极大程度上取决于你选择和谁安定下来。我们肯定都很看重一些品质：愿意妥协，具备养家的能力，温暖、宽容并支持你。可你是否想过，如果这些品质真的如此重要，我们又为何还执迷于对方的外表呢？  关于美的定义千差万别，普遍规律是否存在？ 有什么办法可以让自己显得更有魅力，帮助我们顺利脱单呢？">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/2018-05-13-人的颜值与数学/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>5-13 颜值与数学的关系 | Haibo的个人小站</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Haibo的个人小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Stay Hungry,Stay Foolish!</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018-05-13-人的颜值与数学/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Li Haibo">
+      <meta itemprop="description" content="生活不只是coding">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Haibo的个人小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">5-13 颜值与数学的关系
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-13 00:00:00" itemprop="dateCreated datePublished" datetime="2018-05-13T00:00:00+08:00">2018-05-13</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-24 16:47:10" itemprop="dateModified" datetime="2019-03-24T16:47:10+08:00">2019-03-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="从数学的角度告诉你："><a href="#从数学的角度告诉你：" class="headerlink" title="从数学的角度告诉你："></a>从数学的角度告诉你：</h1><h2 id="人的颜值有多重要"><a href="#人的颜值有多重要" class="headerlink" title="人的颜值有多重要"></a>人的颜值有多重要</h2><hr>
+<ul>
+<li><strong>始于颜值</strong></li>
+<li><strong>陷于颜值</strong></li>
+<li><strong>忠于颜值</strong></li>
+</ul>
+<blockquote>
+<p><strong>选择伴侣是一生中最重要的决定之一</strong>,<br>未来的幸福极大程度上取决于你选择和谁安定下来。<br>我们肯定都很看重一些品质：愿意妥协，具备养家的能力，温暖、宽容并支持你。<br>可你是否想过，如果这些品质真的如此重要，我们又为何还执迷于对方的外表呢？</p>
+</blockquote>
+<p><em>关于美的定义千差万别，普遍规律是否存在？</em></p>
+<p><strong>有什么办法可以让自己显得更有魅力，帮助我们顺利脱单呢？</strong></p>
+<p>数学家汉娜·弗莱博士在《爱情数学》中巧妙地揭示了**爱情中隐藏的数学规律。</p>
+<h3 id="关于“美”的普遍规律"><a href="#关于“美”的普遍规律" class="headerlink" title="关于“美”的普遍规律"></a>关于“美”的普遍规律</h3><blockquote>
+<p>科学家、数学家和心理学家在过去的几个世纪里投入了大量心力，<br>试图定义”美”那难以捉摸的本质。人们对美的概念各不相同，<br>因此才会乐此不疲地讨论他人是否具有吸引力。<br>不过少数的幸运儿——主要集中在好莱坞——他们的美丽面孔似乎无可非议。<br>一定有些基本条件是人们一致认可的。</p>
+</blockquote>
+<p><strong>有些人认为我们已经找到了美丽的确切原因，那是一个叫作”黄金比例”的数学概念。</strong></p>
+<hr>
+<blockquote>
+<p>如果你没听说过黄金比例，那么请允许让我向你介绍一下，<br>它是一个无理数，大约等于0.61803399……通常用希腊字母Ф表示。它的概念来自几何学，<br>然而人们发现，无论是在花瓣数量还是在兔子繁殖速度等方面，它都适用。</p>
+</blockquote>
+<blockquote>
+<p>你会在诸多美容博客和视频网站上看到关于黄金比例与面容关系的理论。<br><strong>不过只有一个问题——黄金比例并不是可靠的科学。</strong></p>
+</blockquote>
+<blockquote>
+<p><strong><em>真正的科学，需要你竭力反驳自己的理论。</em></strong><br>越多尝试，越多失败，越多证明自己的错误，才越能找到支持自己理论的证据。<br>虽然我也很希望能用一个数字来解释美，然而测量千万张脸蛋上的各种比例，<br>直到找到符合自己理论的例子-这种方法根本就不是科学。</p>
+</blockquote>
+<blockquote>
+<p>用黄金比例来定义美的问题在于，如果你足够努力地寻找规律，<br>便一定能找到，尤其是当你的定义不那么精确时。你如何判断耳朵的”起始点”，<br>或鼻子的”最底端”？你又怎样才能精确到黄金比例小数点后的第五位，甚至更多？</p>
+</blockquote>
+<blockquote>
+<p>或许有朝一日会有人找到人体与这个数字相关的恰当理由。但在此之前，<br>就如斯坦福大学的数学家基思·德夫林(Keith Devlin)所说，<br>用黄金比例来定义美就像是一个”不愿消失的神话”。</p>
+</blockquote>
+<blockquote>
+<p>不过还好，<strong>本文只意在说明一些的确与美有关的数学概念。</strong><br>这些概念各自为人类在进化过程中更重视潜在伴侣某些特征的原因做出了解释。</p>
+</blockquote>
+<hr>
+<h3 id="理论一：人类偏爱平均脸型"><a href="#理论一：人类偏爱平均脸型" class="headerlink" title="理论一：人类偏爱平均脸型"></a>理论一：人类偏爱平均脸型</h3><blockquote>
+<p>最早发现的理论之一便是人们对平均脸形的偏爱。<br>19世纪以来，研究者发现把某一族群成员的面部图像重叠，<br>形成的便是一张被普遍认为具有吸引力的平均脸。每个族群都有不同的审美，<br>但最终当你抹平了<strong>大下巴、招风耳、长额头后</strong>,<br>得到的就是个彻底平均的俊男脸或靓女脸（尽管或许没什么特点）。</p>
+</blockquote>
+<blockquote>
+<p>这里提出的理论是:<em>我们在择偶时往往不喜欢对方的脸形不同寻常，<br>生怕他们奇怪的突变基因会遗传给后代。</em></p>
+</blockquote>
+<h3 id="理论二：面部对称性也是美的重要特征"><a href="#理论二：面部对称性也是美的重要特征" class="headerlink" title="理论二：面部对称性也是美的重要特征"></a>理论二：面部对称性也是美的重要特征</h3><blockquote>
+<p>对健康与遗传的考虑是审美中反复出现的主题。<br>面部对称性也是美的重要特征。面部自然对称的人在魅力值调查中总是会得到很高的评分。<br><strong>然而我们以对称为美，这实际上只是做出了对健康状况的认可罢了。</strong></p>
+</blockquote>
+<blockquote>
+<p>我们<strong>小时候每次咳嗽或感冒都会对发育造成细微的影响，<br>导致轻微的不规则生长。一只眼睛或许比另一只高出几毫米，<br>一个鼻孔比另一个略大一丁点儿</strong>。影响或许极小，<br>但足够让人在判断美丑时从潜意识中就能发现这些线索。<br>我们在潜意识中都认为，稍不对称的五官很有可能表明免疫系统有些小毛病。<br>终归你希望自己的子嗣尽可能健康。</p>
+</blockquote>
+<h3 id="理论三：激素分泌水平与人们普遍认为好看的特征息息相关"><a href="#理论三：激素分泌水平与人们普遍认为好看的特征息息相关" class="headerlink" title="理论三：激素分泌水平与人们普遍认为好看的特征息息相关"></a>理论三：激素分泌水平与人们普遍认为好看的特征息息相关</h3><blockquote>
+<p>生物进化因素对审美的影响还不止于此。它与人们普遍认为好看的特征也息息相关。<br><strong>尖下巴、大眼睛、下嘴唇稍丰满</strong>的女性在许多不同文化中都被认为是最美的。<br>而<strong>浓眉毛、下巴轮廓有棱有角</strong>的男性则普遍被认为是有魅力的。<br>这些特征或与激素分泌水平高低有关，因此才格外重要。</p>
+</blockquote>
+<blockquote>
+<p>青春期时，女性的激素分泌会直接影响面部特征的发育。<br>雌性激素水平高的女性会有丰满的嘴唇和较大的腰臀比例，<br>而雄性激素-也就是类固醇激素-水平低的女性会保留住儿时短而尖的下巴，<br>而更平的眉毛也使她们的眼睛看上去更大。</p>
+</blockquote>
+<blockquote>
+<p>而且-毫不意外地-女性激素的平衡也与生育能力成正相关。</p>
+</blockquote>
+<blockquote>
+<p>另一方面，男性在青春期时则需要睾丸素的支持才能发育形成肌块、<br>宽下巴和清晰的眉骨，而清晰的眉骨自然会使眼睛看上去更加深邃。<br>睾丸素这种雄性激素也与生育能力息息相关。</p>
+</blockquote>
+<hr>
+<p><em>所以当我们对一个下颌宽硕的男人或嘴唇丰盈的女人倾心时，<br>我们只是遵从了生物繁衍进化的需求而已。</em></p>
+<h4 id="这也解释了女人为什么会擦口红，因为这会使男人渴望与她共育后代。"><a href="#这也解释了女人为什么会擦口红，因为这会使男人渴望与她共育后代。" class="headerlink" title="这也解释了女人为什么会擦口红，因为这会使男人渴望与她共育后代。"></a>这也解释了女人为什么会擦口红，因为这会使男人渴望与她共育后代。</h4>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数学/" rel="tag"># 数学</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018-05-7-学习数学本应该使用的方法/" rel="next" title="5-7 学习数学本应该使用的方法">
+                <i class="fa fa-chevron-left"></i> 5-7 学习数学本应该使用的方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018-06-3-python学习笔记（1）/" rel="prev" title="5-7 python学习笔记（1）">
+                5-7 python学习笔记（1） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Li Haibo</p>
+              <div class="site-description motion-element" itemprop="description">生活不只是coding</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#从数学的角度告诉你："><span class="nav-number">1.</span> <span class="nav-text">从数学的角度告诉你：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#人的颜值有多重要"><span class="nav-number">1.1.</span> <span class="nav-text">人的颜值有多重要</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于“美”的普遍规律"><span class="nav-number">1.1.1.</span> <span class="nav-text">关于“美”的普遍规律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#理论一：人类偏爱平均脸型"><span class="nav-number">1.1.2.</span> <span class="nav-text">理论一：人类偏爱平均脸型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#理论二：面部对称性也是美的重要特征"><span class="nav-number">1.1.3.</span> <span class="nav-text">理论二：面部对称性也是美的重要特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#理论三：激素分泌水平与人们普遍认为好看的特征息息相关"><span class="nav-number">1.1.4.</span> <span class="nav-text">理论三：激素分泌水平与人们普遍认为好看的特征息息相关</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这也解释了女人为什么会擦口红，因为这会使男人渴望与她共育后代。"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">这也解释了女人为什么会擦口红，因为这会使男人渴望与她共育后代。</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Li Haibo</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.1"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
