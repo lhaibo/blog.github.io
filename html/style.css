@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  background-image: url(./img.jpg);
+  background-size: cover;
+}
+.imgdiv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  height: 1000px;
+  background: grey;
+  opacity: 0.6;
+  display: none;
+  z-index: 2;
+}
+ .mbody{
+  width:auto;
+  height: auto;
+}
+.tbody{
+  height: 300px;
+  width: 500px;
+  margin: 50px auto;
+  background-image: url(./img.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
+.mtable{
+  width: 400px;
+  height:300px;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+}
+#text{
+  width: 80px;
+  height: 30px;
+  border: 0px;
+  opacity: 0.6;
+}
+.text1{
+  width: 80px;
+  height: 15px;
+  border: 0px;
+}
+.buttonArea{
+  width:245px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+.adiv{
+  width: 400px;
+  height:auto;
+  margin: 40px auto;
+  padding: 50px;
+  border: 2px solid yellow;
+  background-color: grey;
+  opacity: 0.9;
+  text-align: center;
+}
+.atable{
+  width: 150px;
+  height:auto;
+  margin: 50px auto;
+  border: 2px solid blue;
+  text-align: center;
+  color: white;
+}
+.sname{
+
+}
+.sno{
+  
+}
