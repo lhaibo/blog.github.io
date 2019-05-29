@@ -45,5 +45,5 @@ function enter(){
 function start(){
   var dataName = ["小明","小红","小华"];
   var dataSno = ["1901","1902","1903"];
-  
+
   for (var i = 1; i 
