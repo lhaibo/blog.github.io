@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Robot Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Unity手游学习之太空大战明天的你是更棒的！">
+<meta name="keywords" content="unity">
+<meta property="og:type" content="article">
+<meta property="og:title" content="太空大战总结">
+<meta property="og:url" content="http://yoursite.com/太空大战总结/index.html">
+<meta property="og:site_name" content="Haibo的个人小站">
+<meta property="og:description" content="Unity手游学习之太空大战明天的你是更棒的！">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-06-17T13:26:19.046Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="太空大战总结">
+<meta name="twitter:description" content="Unity手游学习之太空大战明天的你是更棒的！">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/太空大战总结/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>太空大战总结 | Haibo的个人小站</title>
+  
+
+
+
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c152b812868ea7423600dfbde071d7a5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Haibo的个人小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Stay Hungry,Stay Foolish!</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/太空大战总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Li Haibo">
+      <meta itemprop="description" content="生活不只是coding">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Haibo的个人小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">太空大战总结
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-17 20:01:46 / 修改时间：21:26:19" itemprop="dateCreated datePublished" datetime="2019-06-17T20:01:46+08:00">2019-06-17</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Unity手游学习之太空大战"><a href="#Unity手游学习之太空大战" class="headerlink" title="Unity手游学习之太空大战"></a>Unity手游学习之太空大战</h1><p>明天的你是更棒的！</p>
+<hr>
+<a id="more"></a>
+<h1 id="模型的处理"><a href="#模型的处理" class="headerlink" title="模型的处理"></a>模型的处理</h1><h2 id="模型、材质和贴图的基本关系"><a href="#模型、材质和贴图的基本关系" class="headerlink" title="模型、材质和贴图的基本关系"></a>模型、材质和贴图的基本关系</h2><p>首先要搞清楚这三者的关系，用两句话来概括便是：</p>
+<ol>
+<li>模型的表面质感由材质球呈现。</li>
+<li>贴图可以为材质球提供不同的纹理表现。</li>
+</ol>
+<h1 id="动画的制作"><a href="#动画的制作" class="headerlink" title="动画的制作"></a>动画的制作</h1><p>使用animator创建，几帧的动画用一秒几帧会比较舒服。</p>
+<h1 id="灯光的设置"><a href="#灯光的设置" class="headerlink" title="灯光的设置"></a>灯光的设置</h1><p>选择Window-&gt;Rendering-&gt;Lighting Settings里的Ambient Source后，可使用颜色作为环境光代替默认的天空盒，Ambient Color可以整体影响场景光线的亮度。</p>
+<h1 id="摄像机的设置"><a href="#摄像机的设置" class="headerlink" title="摄像机的设置"></a>摄像机的设置</h1><p>align with view很关键！</p>
+<h1 id="主角的设置"><a href="#主角的设置" class="headerlink" title="主角的设置"></a>主角的设置</h1><ol>
+<li>先使其能够用键盘移动<ol>
+<li>移动速度 speed</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">	void move()</span><br><span class="line">&#123;</span><br><span class="line">​	if (Input.GetKey(KeyCode.W))</span><br><span class="line">​   &#123;</span><br><span class="line">​       movev += m_speed * Time.deltaTime;</span><br><span class="line">​   &#125;</span><br><span class="line">​   if (Input.GetKey(KeyCode.S))</span><br><span class="line">​   &#123;</span><br><span class="line">​       movev -= m_speed * Time.deltaTime;</span><br><span class="line">​   &#125;</span><br><span class="line">​   if (Input.GetKey(KeyCode.A))</span><br><span class="line">​   &#123;</span><br><span class="line">​       moveh -= m_speed * Time.deltaTime;</span><br><span class="line">​   &#125;</span><br><span class="line">​   if (Input.GetKey(KeyCode.D))</span><br><span class="line">​   &#123;</span><br><span class="line">​       moveh += m_speed * Time.deltaTime;</span><br><span class="line">​   &#125;</span><br><span class="line">    m_transform.Translate(new Vector3(moveh, 0, movev));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>发射子弹<ol>
+<li>子弹预制体</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">void shoot()</span><br><span class="line">&#123;</span><br><span class="line">	m_rocketTimer -= Time.deltaTime;</span><br><span class="line">        if (m_rocketTimer &lt;= 0)</span><br><span class="line">        &#123;</span><br><span class="line">            m_rocketTimer = shootSpeed;</span><br><span class="line">            //空格或者鼠标左键</span><br><span class="line">            if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0))</span><br><span class="line">            &#123;</span><br><span class="line">  			//创建子弹              						//Instantiate(m_rocket,m_transform.position,m_transform.rotation);</span><br><span class="line">        var pool = PathologicalGames.PoolManager.Pools[&quot;mypool&quot;];</span><br><span class="line">        pool.Spawn(&quot;rocket&quot;, m_transform.position, _transform.rotation, null);</span><br><span class="line">        m_audio.PlayOneShot(m_shootClip);//播放音效</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="子弹的设置"><a href="#子弹的设置" class="headerlink" title="子弹的设置"></a>子弹的设置</h1><ol>
+<li>移动速度</li>
+<li>子弹威力</li>
+<li>离开屏幕后销毁自身</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">void move()</span><br><span class="line">&#123;</span><br><span class="line">	m_transform.Translate(Vector3.forward *m_speed* Time.deltaTime);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void destroySelf()</span><br><span class="line">&#123;</span><br><span class="line">    destroy(this.gameObject);</span><br><span class="line">    //通过对象池销毁</span><br><span class="line">    //if (!gameObject.activeSelf)</span><br><span class="line">    //&#123;</span><br><span class="line">    //    return;</span><br><span class="line">    //&#125;</span><br><span class="line">    //var p = PathologicalGames.PoolManager.Pools[&quot;mypool&quot;];</span><br><span class="line">    //if (p.IsSpawned(m_transform))</span><br><span class="line">    //&#123;</span><br><span class="line">    //    p.Despawn(m_transform);</span><br><span class="line">    //&#125;</span><br><span class="line">    //else</span><br><span class="line">    //&#123;</span><br><span class="line">    //    Destroy(gameObject);</span><br><span class="line">    //&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void OnBecameInvisible()//当可渲染的物体离开可视范围时回调</span><br><span class="line">    &#123;</span><br><span class="line">        if (this.enabled)</span><br><span class="line">        &#123;</span><br><span class="line">            //Destroy(this.gameObject);</span><br><span class="line">            destroySelf();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Prefab的创建"><a href="#Prefab的创建" class="headerlink" title="Prefab的创建"></a>Prefab的创建</h1><p>直接拖动创建</p>
+<h1 id="敌人的设置"><a href="#敌人的设置" class="headerlink" title="敌人的设置"></a>敌人的设置</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">public class Enemy : MonoBehaviour</span><br><span class="line">&#123;</span><br><span class="line">    public float m_speed = 0.7f;</span><br><span class="line">    public int m_life = 6;//血量</span><br><span class="line">    public Transform m_explosionFX;</span><br><span class="line">    public int m_point = 10;//消灭敌人获得的分数</span><br><span class="line">    protected float m_rotSpeed = 30;//旋转速度</span><br><span class="line"></span><br><span class="line">    protected Transform m_transform;</span><br><span class="line"></span><br><span class="line">    void Start()</span><br><span class="line">    &#123;</span><br><span class="line">        m_transform = this.transform;    </span><br><span class="line">    &#125;</span><br><span class="line">    void Update()</span><br><span class="line">    &#123;</span><br><span class="line">        Move();</span><br><span class="line">    &#125;</span><br><span class="line">    void OnTriggerEnter(Collider other)</span><br><span class="line">    &#123;</span><br><span class="line">        </span><br><span class="line">        if (other.tag==&quot;PlayerRocket&quot;)</span><br><span class="line">        &#123;</span><br><span class="line">            Rocket rocket = other.GetComponent&lt;Rocket&gt;();</span><br><span class="line">            if (rocket!=null)</span><br><span class="line">            &#123;</span><br><span class="line">                m_life -= rocket.m_power;</span><br><span class="line">                if (m_life&lt;=0)</span><br><span class="line">                &#123;</span><br><span class="line">                    GameManager.Instance.Addscore(m_point);</span><br><span class="line">                    Instantiate(m_explosionFX, transform.position, Quaternion.identity);</span><br><span class="line">                    Destroy(this.gameObject);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        else if (other.tag==&quot;Player&quot;)</span><br><span class="line">        &#123;</span><br><span class="line">            m_life = 0;</span><br><span class="line">            Destroy(this.gameObject);</span><br><span class="line">        &#125;    </span><br><span class="line">    &#125;</span><br><span class="line">    //为以后扩展,Move()为虚函数</span><br><span class="line">    protected virtual void Move()</span><br><span class="line">    &#123;</span><br><span class="line">        //左右移动</span><br><span class="line">        float rx = Mathf.Sin(Time.time) * Time.deltaTime;//在-1和1之间变化</span><br><span class="line">        //往-z方向移动</span><br><span class="line">        m_transform.Translate(new Vector3(rx, 0, -m_speed * Time.deltaTime));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="物理碰撞"><a href="#物理碰撞" class="headerlink" title="物理碰撞"></a>物理碰撞</h1><p>添加collider勾选is trigger和物理组件去掉gravity勾选Is Kinematic使其不受物理模拟影响</p>
+<h1 id="更强的敌人-继承"><a href="#更强的敌人-继承" class="headerlink" title="更强的敌人-继承"></a>更强的敌人-继承</h1><p>同样具有死亡和被子弹击中,所以继承原来的Enemy重写Move实现重用</p>
+<h1 id="声音的添加"><a href="#声音的添加" class="headerlink" title="声音的添加"></a>声音的添加</h1><p>一定要添加Audio Sources组件</p>
+<h1 id="特效的添加"><a href="#特效的添加" class="headerlink" title="特效的添加"></a>特效的添加</h1><p>死亡时实例化特效在死亡位置</p>
+<h1 id="敌人生成器"><a href="#敌人生成器" class="headerlink" title="敌人生成器"></a>敌人生成器</h1><p>使用协程,每次随机等待5-15秒生成随机敌人,为了方便查看空物体,使用OnDrawGizmos()为其增加图标.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">public class EnemySpawn : MonoBehaviour</span><br><span class="line">&#123;</span><br><span class="line">    public Transform[] m_enemyPrefabs;</span><br><span class="line">    void Start()</span><br><span class="line">    &#123;</span><br><span class="line">        StartCoroutine(SpawnEnemy());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    IEnumerator SpawnEnemy()</span><br><span class="line">    &#123;</span><br><span class="line">        while (true)</span><br><span class="line">        &#123;</span><br><span class="line">            yield return new WaitForSeconds(Random.Range(5, 15));</span><br><span class="line">            Instantiate(m_enemyPrefabs[Random.Range(0, m_enemyPrefabs.Length)], transform.position, Quaternion.identity);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void OnDrawGizmos()</span><br><span class="line">    &#123;</span><br><span class="line">        //给空物体一个图标</span><br><span class="line">        Gizmos.DrawIcon(transform.position, &quot;item.png&quot;, true);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="游戏UI和战斗管理"><a href="#游戏UI和战斗管理" class="headerlink" title="游戏UI和战斗管理"></a>游戏UI和战斗管理</h1><p>采用单例模式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">public class GameManager : MonoBehaviour</span><br><span class="line">&#123;</span><br><span class="line">    public static GameManager Instance;</span><br><span class="line"></span><br><span class="line">    public Transform m_canavas_main;</span><br><span class="line">    public Transform m_canavas_gameover;</span><br><span class="line">    public Transform m_canavas_Pause;</span><br><span class="line">    public Text m_text_score;</span><br><span class="line">    public Text m_text_best;</span><br><span class="line">    public Text m_text_life;</span><br><span class="line"></span><br><span class="line">    protected int m_score = 0;</span><br><span class="line">    public static int m_hiscore = 0;</span><br><span class="line">    protected Player m_player;</span><br><span class="line"></span><br><span class="line">    public AudioClip m_musicClip;</span><br><span class="line">    protected AudioSource m_Audio;</span><br><span class="line"></span><br><span class="line">    void Start()</span><br><span class="line">    &#123;</span><br><span class="line">        Instance = this;</span><br><span class="line">        m_Audio = this.gameObject.GetComponent&lt;AudioSource&gt;();</span><br><span class="line">        m_Audio.clip = m_musicClip;</span><br><span class="line">        m_Audio.loop = true;</span><br><span class="line">        m_Audio.Play();</span><br><span class="line"></span><br><span class="line">        m_player = GameObject.FindGameObjectWithTag(&quot;Player&quot;).GetComponent&lt;Player&gt;();</span><br><span class="line"></span><br><span class="line">        m_text_score = m_canavas_main.transform.Find(&quot;Text_score&quot;).GetComponent&lt;Text&gt;();</span><br><span class="line">        m_text_best = m_canavas_main.transform.Find(&quot;Text_best&quot;).GetComponent&lt;Text&gt;();</span><br><span class="line">        m_text_life = m_canavas_main.transform.Find(&quot;Text_life&quot;).GetComponent&lt;Text&gt;();</span><br><span class="line">        if (PlayerPrefs.HasKey(&quot;best&quot;))</span><br><span class="line">        &#123;</span><br><span class="line">            m_hiscore = PlayerPrefs.GetInt(&quot;best&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        m_text_score.text = string.Format(&quot;分数: &#123;0&#125;&quot;, m_score);</span><br><span class="line">        m_text_best.text = string.Format(&quot;最高分: &#123;0&#125;&quot;, m_hiscore);</span><br><span class="line">        m_text_life.text = string.Format(&quot;生命: &#123;0&#125;&quot;, m_player.m_life);</span><br><span class="line"></span><br><span class="line">        var restart_button = m_canavas_gameover.transform.Find(&quot;Restart&quot;).GetComponent&lt;Button&gt;();</span><br><span class="line">        restart_button.onClick.AddListener(delegate ()</span><br><span class="line">        &#123;</span><br><span class="line">            SceneManager.LoadScene(SceneManager.GetActiveScene().name);</span><br><span class="line">        &#125;);</span><br><span class="line">        m_canavas_gameover.gameObject.SetActive(false);</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void Update()</span><br><span class="line">    &#123;</span><br><span class="line">        if (Input.GetKeyDown(KeyCode.Escape))</span><br><span class="line">        &#123;</span><br><span class="line">            m_canavas_Pause.gameObject.SetActive(true);</span><br><span class="line">            Time.timeScale = 0;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    public void Addscore(int point)</span><br><span class="line">    &#123;</span><br><span class="line">        m_score += point;</span><br><span class="line">        if (m_hiscore&lt;m_score)</span><br><span class="line">        &#123;</span><br><span class="line">            m_hiscore = m_score;</span><br><span class="line">        &#125;</span><br><span class="line">        m_text_score.text = string.Format(&quot;分数: &#123;0&#125;&quot;, m_score);</span><br><span class="line">        m_text_best.text = string.Format(&quot;最高分: &#123;0&#125;&quot;, m_hiscore);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void changeLife(int life)</span><br><span class="line">    &#123;</span><br><span class="line">        m_text_life.text = string.Format(&quot;生命: &#123;0&#125;&quot;, life);</span><br><span class="line">        if (life&lt;=0)</span><br><span class="line">        &#123;</span><br><span class="line">            m_canavas_gameover.gameObject.SetActive(true);</span><br><span class="line">            PlayerPrefs.SetInt(&quot;best&quot;, m_hiscore);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void exit()</span><br><span class="line">    &#123;</span><br><span class="line">        Application.Quit();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void goOn()</span><br><span class="line">    &#123;</span><br><span class="line">        m_canavas_Pause.gameObject.SetActive(false);</span><br><span class="line">        Time.timeScale = 1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="pc向手游的准备"><a href="#pc向手游的准备" class="headerlink" title="pc向手游的准备"></a>pc向手游的准备</h1><h2 id="鼠标控制"><a href="#鼠标控制" class="headerlink" title="鼠标控制"></a>鼠标控制</h2><p>添加一个触控层mask</p>
+<p>然后利用射线</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">void Moveto()</span><br><span class="line">    &#123;</span><br><span class="line">        if (Input.GetMouseButton(0))</span><br><span class="line">        &#123;</span><br><span class="line">            Vector3 ms = Input.mousePosition;</span><br><span class="line">            Ray ray = Camera.main.ScreenPointToRay(ms);//将屏幕位置转化为射线</span><br><span class="line">            RaycastHit hitinfor;</span><br><span class="line">            bool iscast = Physics.Raycast(ray,out hitinfor,1000, m_inputMask);</span><br><span class="line">            if (iscast)</span><br><span class="line">            &#123;</span><br><span class="line">                m_targetPos = hitinfor.point;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        Vector3 pos = Vector3.MoveTowards(m_transform.position, m_targetPos, m_speed * Time.deltaTime);</span><br><span class="line">        this.transform.position = pos;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="使用Pool-Manager对象池优化"><a href="#使用Pool-Manager对象池优化" class="headerlink" title="使用Pool Manager对象池优化"></a>使用Pool Manager对象池优化</h1><p>优化游戏,减少垃圾回收,频繁的辣鸡回收是影响性能的主要原因之一。</p>
+<p>插件使用及其简单。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//利用对象池创建</span><br><span class="line">var pool = PathologicalGames.PoolManager.Pools[&quot;mypool&quot;];</span><br><span class="line">pool.Spawn(&quot;rocket&quot;, m_transform.position, m_transform.rotation, null);</span><br><span class="line">//利用对象池删除</span><br><span class="line">void destroySelf()</span><br><span class="line">&#123;</span><br><span class="line">    //destroy(this.gameObject);</span><br><span class="line">    //通过对象池销毁</span><br><span class="line">    if (!gameObject.activeSelf)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    var p = PathologicalGames.PoolManager.Pools[&quot;mypool&quot;];</span><br><span class="line">    if (p.IsSpawned(m_transform))</span><br><span class="line">    &#123;</span><br><span class="line">        p.Despawn(m_transform);</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        Destroy(gameObject);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/unity/" rel="tag"># unity</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/设计模式学习记录-01/" rel="next" title="设计模式学习记录-01">
+                <i class="fa fa-chevron-left"></i> 设计模式学习记录-01
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Li Haibo">
+            
+              <p class="site-author-name" itemprop="name">Li Haibo</p>
+              <div class="site-description motion-element" itemprop="description">生活不只是coding</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/lhaibo" title="GitHub &rarr; https://github.com/lhaibo" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:haibo213@qq.com" title="E-Mail &rarr; mailto:haibo213@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Unity手游学习之太空大战"><span class="nav-number">1.</span> <span class="nav-text">Unity手游学习之太空大战</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#模型的处理"><span class="nav-number">2.</span> <span class="nav-text">模型的处理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模型、材质和贴图的基本关系"><span class="nav-number">2.1.</span> <span class="nav-text">模型、材质和贴图的基本关系</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#动画的制作"><span class="nav-number">3.</span> <span class="nav-text">动画的制作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#灯光的设置"><span class="nav-number">4.</span> <span class="nav-text">灯光的设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#摄像机的设置"><span class="nav-number">5.</span> <span class="nav-text">摄像机的设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主角的设置"><span class="nav-number">6.</span> <span class="nav-text">主角的设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#子弹的设置"><span class="nav-number">7.</span> <span class="nav-text">子弹的设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Prefab的创建"><span class="nav-number">8.</span> <span class="nav-text">Prefab的创建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#敌人的设置"><span class="nav-number">9.</span> <span class="nav-text">敌人的设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#物理碰撞"><span class="nav-number">10.</span> <span class="nav-text">物理碰撞</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更强的敌人-继承"><span class="nav-number">11.</span> <span class="nav-text">更强的敌人-继承</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#声音的添加"><span class="nav-number">12.</span> <span class="nav-text">声音的添加</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#特效的添加"><span class="nav-number">13.</span> <span class="nav-text">特效的添加</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#敌人生成器"><span class="nav-number">14.</span> <span class="nav-text">敌人生成器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#游戏UI和战斗管理"><span class="nav-number">15.</span> <span class="nav-text">游戏UI和战斗管理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pc向手游的准备"><span class="nav-number">16.</span> <span class="nav-text">pc向手游的准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#鼠标控制"><span class="nav-number">16.1.</span> <span class="nav-text">鼠标控制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Pool-Manager对象池优化"><span class="nav-number">17.</span> <span class="nav-text">使用Pool Manager对象池优化</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+    <div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=34766015&auto=1&height=32"></iframe>
+    </div>
+  </aside>
+  
+
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Li Haibo</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.1"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
